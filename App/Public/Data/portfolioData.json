@@ -1,0 +1,128 @@
+{
+    "name": "Rohan Shrotri",
+    "title": "Full Stack Web Developer",
+    "description": "Full stack developer specializing in Node, MongoDB and Express looking for a new software development opportunity. Currently employed as an IT professional with three years of experience in a corporate environment. Additional programming experience is with C/C++, Python and JavaScript. ",
+    "address": "San Jose, California",
+    "phone_number": "",
+    "email": "rohan.shrotri@outlook.com",
+    "links": [
+        {
+            "github": "https://github.com/MoistSadness"
+        },
+        {
+            "linkedin": "https://www.linkedin.com/in/rohan-shrotri-0711b7137/"
+        }
+    ],
+    "education": [
+        {
+            "degree_name": "Cell/Molecular Biology",
+            "degree_type": "B.S.",
+            "minor_name": "Chemistry",
+            "school": "Humboldt State University",
+            "location": "Arcata, CA",
+            "start_date": "August 2016",
+            "end_date": "December 2018"
+        },
+        {
+            "degree_name": "Systems Programming",
+            "degree_type": "A.S.",
+            "minor_name": "",
+            "school": "De Anza College",
+            "location": "Cupertino, CA",
+            "start_date": "January 2019",
+            "end_date": "Current"
+        }
+    ],
+    "professional_experience": [
+        {
+            "title": "Datacenter Technician",
+            "company": "IBM Cloud",
+            "location": "Santa Clara, CA",
+            "start_date": "August 2020",
+            "end_date": "Current",
+            "details": [
+                "Demonstrated general knowledge proficiency with computing and telecommunications equipment.",
+                "Deployed inventoried and maintained systems availability for servers and networking equipment in a datacenter of over 10,000 devices.",
+                "Installed rails, fiber, cat5/cat6 copper cabling, servers and switches with accurate labeling, color coding and documentation to meet quality standards.",
+                "Provided hands on support to customers, offsite networking and systems teams within IBM SLA.",
+                "Displayed a high level of self-sufficiency by performing all critical datacenter operations solo."
+            ]
+        },
+        {
+            "title": "Service Desk Technician",
+            "company": "Pharmacyclics, an Abbbie company",
+            "location": "Sunnyvale, CA",
+            "start_date": "April 2019",
+            "end_date": "April 2020",
+            "details": [
+                "Provided level 1 support for all hardware and software issues directly affecting end users including company PCs, printers and mobile phones",
+                "Displayed proficiency in troubleshooting and technical problems solving by fixing undocumented errors.",
+                "Consolidated new hire onboarding and PC build process, performed fault diagnosis of faulty systems, and the management of open tickets in company ticketing system.",
+                "Demonstrated friendly yet professional demeanor when interacting with customers both in person and on the phone.",
+                "Procured and managed inventory of IT/Company equipment"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "programming_languages": [
+                "C",
+                "C++",
+                "Java",
+                "Python",
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "programming_technologies": [
+                "Node.js",
+                "Git",
+                "Bootstrap",
+                "Bulma",
+                "Express",
+                "MERN",
+                "MEAN",
+                "Mongo DB",
+                "Mongoose"
+            ],
+            "certificates": [
+                "CompTIA Network+ (in progress)",
+                "Python"
+            ],
+            "etc": [
+                "Microsoft Office 365",
+                "Adobe Creative Cloud",
+                "Active Directory"
+            ]
+        }
+    ],
+    "portfolio": [
+        {
+            "title": "YelpCamp",
+            "short_description": "A Yelp Clone for viewing and rating campsites",
+            "description": "This is the production application that I created as part of the online web development bootcamp I participated in.",
+            "screenshots": [
+                "../Img/YelpCamp_1.png",
+                "../Img/YelpCamp_2.png",
+                "../Img/YelpCamp_3.png",
+                "../Img/YelpCamp_4.png"
+            ],
+            "repository": "https://github.com/MoistSadness/YelpCamp",
+            "skills_used": [
+                "HTML", "CSS", "Javascript", "Bootstrap", "Node", "Express", "MongoDB", "Mongoose"
+            ]
+        },
+        {
+            "title": "Ping Pong Scorekeepter",
+            "short_description": "A web application to keep score",
+            "description": "A scorekeeping application that I created to get some practice working with Documentation for a technologi I didnt know how to use as well as event handlers",
+            "screenshots": [
+                "../Img/PingPongScorekeeper.png"
+            ],
+            "repository": "https://github.com/MoistSadness/PingPongScorekeeper_webdev",
+            "skills_used": [
+                "HTML", "CSS", "Javascript", "Bulma"
+            ]
+        }
+    ]
+}

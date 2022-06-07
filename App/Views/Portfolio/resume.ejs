@@ -1,0 +1,13 @@
+<% layout("Layouts/boilerplate") %> 
+
+<h1>Full Resume</h1>
+
+
+
+<!-- Display portfolio projects here-->
+<% for (let i of portfolioData.portfolio){ %>
+<h4><%= i.title %></h4>
+    <% for (let img of i.screenshots){ %>
+        <img src="<%= img %> " alt="">
+    <% } %> 
+<% } %> 
