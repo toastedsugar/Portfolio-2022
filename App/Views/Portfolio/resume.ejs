@@ -1,13 +1,88 @@
 <% layout("Layouts/boilerplate") %> 
+<main class="py-3 container text-light">
+    <h1>Full Resume</h1>
 
-<h1>Full Resume</h1>
+    <!-- Display general information projects here-->
+    <section>
+        <h2>About Me</h2>
+        <ul>
+            <li><%= portfolioData.name %></li>
+            <li><%= portfolioData.title %></li>
+            <li><%= portfolioData.description %></li>
+            <li><%= portfolioData.address %></li>
+            <li><%= portfolioData.email %></li>
+            <ul>
+                <% for (let link of portfolioData.links){ %>
+                <li><%= Object.keys(link)[0] %> - <%= link[Object.keys(link)[0]] %> </li>
+                <% } %> 
+            </ul>
+        </ul>
+    </section>
 
+    <!-- Display education here-->
+    <section>
+        <h2>Education</h2>
+        <% for (let school of portfolioData.education){ %>
+        <ul>
+            <li><%= school.degree_name %> </li> 
+            <li><%= school.degree_type %> </li> 
+            <li><%= school.school %> </li> 
+            <li><%= school.location %> </li> 
+            <li><%= school.start_date %> </li> 
+            <li><%= school.end_date %> </li> 
+        </ul>
+        <% } %> 
+    </section>
 
+    <!-- Display professional experience here-->
+    <section>
+        <h2>Professional Experience</h2>
+        <% for (let job of portfolioData.professional_experience){ %>
+            <ul>
+                <li><%= job.title %> </li>
+                <li><%= job.company %> </li>
+                <li><%= job.location %> </li>
+                <li><%= job.start_date %> </li>
+                <li><%= job.end_date %> </li>
+                <li> Details:
+                    <ul>
+                    <% for (let detail of job.details){ %>
+                        <li><%= detail %> </li>
+                    <% } %> 
+                    </ul>
 
-<!-- Display portfolio projects here-->
-<% for (let i of portfolioData.portfolio){ %>
-<h4><%= i.title %></h4>
-    <% for (let img of i.screenshots){ %>
-        <img src="<%= img %> " alt="">
+                </li>
+            </ul>
+        <% } %> 
+    </section>
+
+    <!-- Display skills here-->
+    <section>
+        <h2>Skills</h2>
+        <% for (let skill_type of portfolioData.skills){ %>
+        <% for (let key of Object.keys(skill_type)){ %>
+            <p><%= key %>: <% for (let skill of skill_type[key]){ %>, <%= skill %><% } %></p>
+        <% } %> 
+        <% } %> 
+    </section>
+
+    <!-- Display portfolio projects here-->
+    <section>
+        <h2>Sample Projects</h2>
+    <% for (let i of portfolioData.portfolio){ %>
+        <ul>
+            <li><img src="<%= i.screenshots[0] %>" alt=""></li>
+            <li><%= i.title %></li>
+            <li><%= i.repository %></li>
+            <li><%= i.short_description %></li>
+            <li> Skills:
+                <ul>
+                    <% for(let skill of i.skills_used){ %>
+                    <li><%= skill %> </li>
+                    <% } %> 
+                </ul>
+            </li>
+        </ul> 
     <% } %> 
-<% } %> 
+    </section>
+</main>

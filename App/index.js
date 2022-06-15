@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, "Public")));
 /***************************************************
 GET Request for Homepage */
 app.get("/", (req, res) => {
-    res.render("Portfolio/index", {portfolioData});
+    res.render("Portfolio/home", {portfolioData});
 })
 
 /***************************************************

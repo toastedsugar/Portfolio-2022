@@ -98,6 +98,7 @@
     ],
     "portfolio": [
         {
+            "id": "0",
             "title": "YelpCamp",
             "short_description": "A Yelp Clone for viewing and rating campsites",
             "description": "This is the production application that I created as part of the online web development bootcamp I participated in.",
@@ -113,8 +114,9 @@
             ]
         },
         {
+            "id": "1",
             "title": "Ping Pong Scorekeepter",
-            "short_description": "A web application to keep score",
+            "short_description": "A web application to keep score for anything, really",
             "description": "A scorekeeping application that I created to get some practice working with Documentation for a technologi I didnt know how to use as well as event handlers",
             "screenshots": [
                 "../Img/PingPongScorekeeper.png"

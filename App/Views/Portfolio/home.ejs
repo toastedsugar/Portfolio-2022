@@ -1,0 +1,37 @@
+<% layout("Layouts/boilerplate") %>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="home-banner" src="../Img/oliver-plattner-Plt0vHDRb9U-unsplash.jpg" alt="" class="img-fluid">
+                <div class="text-light position-absolute top-0 start-0 p-5">
+                    <div class="p-5">
+                        <h4 class="display-2"><%= portfolioData.name %></h4>
+                        <h5><%= portfolioData.title %></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 text-light">
+        <div class="container">
+            <div class="row row-cols-sm-2 row-cols-md-3 g-3">
+            <!-- Display portfolio projects here-->
+            <% for (let i of portfolioData.portfolio){ %>
+                <div class="col">
+                    <div class="card h-100 border-secondary bg-dark">
+                        <a href=""><img src="<%= i.screenshots[0] %>" alt="" class="img-fluid card-img-top"></a>
+                        <div class="card-body">
+                            <h5><%= i.title %></h5>
+                            <p><%= i.short_description %></p>
+                            <% for(let skill of i.skills_used){ %>
+                                <span class="badge rounded-pill text-bg-light text-dark"><%= skill %></span>
+                            <% } %> 
+                        </div>
+                    </div>
+                </div> 
+            <% } %> 
+            </div>
+        </div>
+    </div>
