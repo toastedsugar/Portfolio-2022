@@ -1,0 +1,21 @@
+<div class="album py-5 text-light">
+    <div class="container">
+        <div class="row row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Display portfolio projects here-->
+        <% for (let i of portfolioData.portfolio){ %>
+            <div class="col">
+                <div class="card h-100 border-secondary bg-dark">
+                    <a href="/project/<%= i.id %> "><img src="<%= i.screenshots[0] %>" alt="" class="img-fluid card-img-top"></a>
+                    <div class="card-body">
+                        <h5><%= i.title %></h5>
+                        <p><%= i.short_description %></p>
+                        <% for(let skill of i.skills_used){ %>
+                            <span class="badge rounded-pill text-bg-light text-dark"><%= skill %></span>
+                        <% } %> 
+                    </div>
+                </div>
+            </div> 
+        <% } %> 
+        </div>
+    </div>
+</div>

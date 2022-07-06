@@ -46,9 +46,33 @@ GET Request for Resume */
 app.get("/resume", (req, res) => {
     res.render("Portfolio/resume", {portfolioData});
 })
-    
+  
+/***************************************************
+GET Request for Projects 
+* Page shows a list of all projects
+*/
+app.get("/projects", (req, res) => {
+    res.render("Portfolio/projectIndex", {portfolioData});
+})
+  
+/***************************************************
+GET Request for individual Project 
+* Details page for a specific project
+*/
+app.get("/project/:id", (req, res) => {
+    projectData = portfolioData.portfolio[req.params.id]
+    console.log(projectData)
+    res.render("Portfolio/project", {projectData});
+})
+  
+/***************************************************
+GET Request for About */
+app.get("/about", (req, res) => {
+    res.render("Portfolio/about", {portfolioData});
+})
 
-// Set up app listener
+/***************************************************
+Set up app listener*/
 const port = 5000
 app.listen(port, () => {
     console.log("Listening on port ", port);

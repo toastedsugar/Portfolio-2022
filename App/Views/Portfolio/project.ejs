@@ -1,0 +1,21 @@
+<% layout("Layouts/boilerplate") %>
+
+<main class="py-3 container bg-dark text-light">
+    <h2> <%= projectData.title %> </h2>
+
+    <% for(let skill of projectData.skills_used){ %>
+        <span class="badge rounded-pill text-bg-light text-dark"><%= skill %></span>
+    <% } %>
+
+    <div class="my-3">
+        <a href="<%= projectData.repository %> "><button type="button" class="btn btn-light">Source Code</button></a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2 py-5">
+            <img class="img-fluid" src="<%= projectData.screenshots[0] %> " alt=""> 
+        </div>
+    </div>
+
+    <p class="my-5"><%= projectData.description %> </p>
+</main>

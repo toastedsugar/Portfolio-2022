@@ -2,6 +2,7 @@
     "name": "Rohan Shrotri",
     "title": "Full Stack Web Developer",
     "description": "Full stack developer specializing in Node, MongoDB and Express looking for a new software development opportunity. Currently employed as an IT professional with three years of experience in a corporate environment. Additional programming experience is with C/C++, Python and JavaScript. ",
+    "bio": "Hello. I am an Information Technology professional that has spent the past six months studying web development. During my three years in industry, I have come to the realization that I am not satisfied with the way my career has been progressing and have been looking to make a change towards something I can do for the forseeable future. I have been programming in some capacity for my entire adult life, first starting with C++ and python many years ago in my community college days and focusing on the web development side more recently. Much of my programming knowledge has been self taught, so I believe I have the capacity required to learn any new skills I may need and provide value to your organization",
     "address": "San Jose, California",
     "phone_number": "",
     "email": "rohan.shrotri@outlook.com",
@@ -99,9 +100,22 @@
     "portfolio": [
         {
             "id": "0",
+            "title": "This Website",
+            "short_description": "My Portfolio Website",
+            "description": "This is my Portfolio website. Not much to explain here when you can just explore it yourself.",
+            "screenshots": [
+                "../Img/Portfolio.png"
+            ],
+            "repository": "https://github.com/MoistSadness/Portfolio-2022",
+            "skills_used": [
+                "HTML", "CSS", "Javascript", "Bootstrap", "Node", "Express"
+            ]
+        },
+        {
+            "id": "1",
             "title": "YelpCamp",
             "short_description": "A Yelp Clone for viewing and rating campsites",
-            "description": "This is the production application that I created as part of the online web development bootcamp I participated in.",
+            "description": "I created this full production application as part of the online web development bootcamp I participated in. I implemented all sorts of things for this website, including things such as a mongo database to store data, user authentication, authorization and some security. Projects like this are what prove my skill when working with websites and why I would be a better employment candidate over the majority of my peers.",
             "screenshots": [
                 "../Img/YelpCamp_1.png",
                 "../Img/YelpCamp_2.png",
@@ -114,8 +128,8 @@
             ]
         },
         {
-            "id": "1",
-            "title": "Ping Pong Scorekeepter",
+            "id": "2",
+            "title": "Ping Pong Scorekeeper",
             "short_description": "A web application to keep score for anything, really",
             "description": "A scorekeeping application that I created to get some practice working with Documentation for a technologi I didnt know how to use as well as event handlers",
             "screenshots": [
@@ -124,6 +138,19 @@
             "repository": "https://github.com/MoistSadness/PingPongScorekeeper_webdev",
             "skills_used": [
                 "HTML", "CSS", "Javascript", "Bulma"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Used Car finder",
+            "short_description": "Scrape craigslist to find cars",
+            "description": "I created this web scraper to automate my car search. I have a JSON file containing a list of cars with search parameters, which the python script takes as input and uses to find every option on craigslist that is a match. I ended up not buying a car in the end, but it was still a good way to get into web development.",
+            "screenshots": [
+                "../Img/Used_car_searcher.png"
+            ],
+            "repository": "https://github.com/MoistSadness/Used-Car-Finder",
+            "skills_used": [
+                "Python", "CSS", "Javascript", "Beautiful Soup"
             ]
         }
     ]
