@@ -61,7 +61,7 @@
             <ul class="list-group list-group-flush">
                 <% for (let skill_type of portfolioData.skills){ %>
                 <% for (let key of Object.keys(skill_type)){ %>
-                    <li class="list-group-item border-secondary bg-dark text-light"><% for (let skill of skill_type[key]){ %><span class="badge rounded-pill text-bg-light text-dark"><%= skill %></span><% } %></li>
+                    <li class="list-group-item border-secondary bg-dark text-light"><% for (let skill of skill_type[key]){ %> <span class="badge rounded-pill text-bg-light text-dark"><%= skill %></span><% } %></li>
                 <% } %> 
                 <% } %> 
             </ul>
