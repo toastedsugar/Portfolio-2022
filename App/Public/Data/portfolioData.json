@@ -152,6 +152,19 @@
             "skills_used": [
                 "Python", "CSS", "Javascript", "Beautiful Soup"
             ]
+        },
+	{
+            "id": "4",
+            "title": "Image Upload API",
+            "short_description": "Upload an image to a server",
+            "description": "My goal is to create a website dedicated to storing photos of my favorite characters. In order to do so, I needed to learn how image upload works and how to manage the images once stored. I decided to do the project in Flask to spice things up and learn something new in the process",
+            "screenshots": [
+                "../Img/Image_upload_cropped.png"
+            ],
+            "repository": "https://github.com/MoistSadness/Image-Library-API-Flask-V1",
+            "skills_used": [
+                "Flask", "Python", "CSS", "HTML", "SQLite"
+            ]
         }
     ]
 }

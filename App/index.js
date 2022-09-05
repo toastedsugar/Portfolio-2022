@@ -10,6 +10,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
+
 const portfolioData = require("./Public/Data/portfolioData.json")
 
 //Connect to database
