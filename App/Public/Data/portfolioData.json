@@ -102,7 +102,7 @@
             "id": "0",
             "title": "This Website",
             "short_description": "My Portfolio Website",
-            "description": "This is my Portfolio website. Not much to explain here when you can just explore it yourself.",
+            "description": "This is my portfolio website. My interest lies mostly on the backend, so I relied heavily on resources such as bootstrap and google fonts.",
             "screenshots": [
                 "../Img/Portfolio.png"
             ],
@@ -143,8 +143,8 @@
         {
             "id": "3",
             "title": "Used Car finder",
-            "short_description": "Scrape craigslist to find cars",
-            "description": "I created this web scraper to automate my car search. I have a JSON file containing a list of cars with search parameters, which the python script takes as input and uses to find every option on craigslist that is a match. I ended up not buying a car in the end, but it was still a good way to get into web development.",
+            "short_description": "Scrape craigslist to find used cars of a specific make and model",
+            "description": "At around the start of 2022, I was interested in purchasing a nice used 4x4 SUV (that I ended up not buying). The process of manually looking up 4Runners and Sequoias on Craigslist was incredibly time consuming, so I decided to automate the process. This python script uses an external JSON file that contains a list of vehicles with search parameters such as make, model, price, year, etc... This project was what got me interested in web development to begin with.",
             "screenshots": [
                 "../Img/Used_car_searcher.png"
             ],
