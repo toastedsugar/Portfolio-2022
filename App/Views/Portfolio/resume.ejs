@@ -1,34 +1,20 @@
 <% layout("Layouts/boilerplate") %> 
-<main class="py-3 container text-light">
+<main class="col-xl-8 py-3 mt-5 container text-light">
 
     <!-- Display general information projects here-->
     <section>
-        <h2>About Me</h2>
-        <p><%= portfolioData.bio %></p>
-
-        
-
-        <ul>
-            <% for (let link of portfolioData.links){ %>
-            <div class="my-3">
-                <a href="<%= link[Object.keys(link)[0]] %>">
-                    <button type="button" class="btn btn-light"><%= Object.keys(link)[0] %></button>
-                </a>
-            </div>
-            <% } %> 
-        </ul>
+        <h2 class="pb-3">About Me</h2>
+        <p class="mb-3 px-4"><%= portfolioData.bio %></p>
     </section>
 
     <!-- Display education here-->
     <section class="py-3">
-        <h2>Education</h2>
+        <h2 class="pb-3">Education</h2>
         <% for (let school of portfolioData.education){ %>
-            <div class="card mb-3 border-secondary bg-dark">
-                <div class="card-body">
-                    <h5 class="card-title"><%= school.degree_type %> in <%= school.degree_name %></b> - <%= school.school %></h5>
-                    <span><%= school.location %></span>
-                    <span style="text-align:right;"><%= school.start_date %> - <%= school.end_date %></span>
-                </div>
+            <div class="mb-3 px-4">
+                <h5><%= school.degree_type %> in <%= school.degree_name %></b> - <%= school.school %></h5>
+                <span><%= school.location %></span>
+                <span style="text-align:right;"><%= school.start_date %> - <%= school.end_date %></span>
             </div>
         <% } %> 
     </section>
@@ -37,17 +23,15 @@
     <section class="py-3">
         <h2>Professional Experience</h2>
         <% for (let job of portfolioData.professional_experience){ %>
-            <div class="card mb-3 border-secondary bg-dark">
-                <div class="card-body">
-                    <h5 class="card-title"><%= job.title %> </h5>
-                    <p class="card-text">
+            <div class="mb-3 px-4">
+                    <h5 class=""><%= job.title %> </h5>
+                    <p class="">
                       <div><%= job.company %>, <%= job.location %></div>
                       <div><%= job.start_date %> - <%= job.end_date %></div>
                     </p>
-                </div>
-                <ul class="list-group list-group-flush">
+                <ul class="">
                     <% for (let detail of job.details){ %>
-                        <li class="list-group-item border-secondary bg-dark text-light"> &bull; <%= detail %> </li>
+                        <li class="list-group-item border-secondary bg-primary text-light"> &bull; <%= detail %> </li>
                     <% } %>
                 </ul>
             </div>
@@ -57,11 +41,11 @@
     <!-- Display skills here-->
     <section class="py-3">
         <h2>Skills</h2>
-        <div class="card mb-3 border-secondary bg-dark">
-            <ul class="list-group list-group-flush">
+        <div class="mb-3 px-4">
+            <ul class="list-unstyled">
                 <% for (let skill_type of portfolioData.skills){ %>
                 <% for (let key of Object.keys(skill_type)){ %>
-                    <li class="list-group-item border-secondary bg-dark text-light"><% for (let skill of skill_type[key]){ %> <span class="badge rounded-pill text-bg-light text-dark"><%= skill %></span><% } %></li>
+                    <li class="text-light py-1"><% for (let skill of skill_type[key]){ %> <span class="badge rounded-pill text-bg-light text-dark px-2"><%= skill %></span><% } %></li>
                 <% } %> 
                 <% } %> 
             </ul>

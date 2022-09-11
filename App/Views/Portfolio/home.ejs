@@ -1,17 +1,13 @@
 <% layout("Layouts/boilerplate") %>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img id="home-banner" src="../Img/oliver-plattner-Plt0vHDRb9U-unsplash.png" alt="" class="img-fluid">
-                <div class="text-light position-absolute top-0 start-0 p-5">
-                    <div class="p-5">
-                        <h4 class="display-2"><%= portfolioData.name %></h4>
-                        <h5 class="px-3"><%= portfolioData.title %></h5>
-                    </div>
-                </div>
+<div class="card text-bg-primary">
+    <img id="home-banner" src="../Img/<%= portfolioData.splash_image %>" class="card-img" alt="...">
+        <div class="card-img-overlay p-5">
+            <div class="p-xl-5">
+                <h1 class="card-title display-2 "><%= portfolioData.name %></h1>
+                <p class="card-text h5 px-3"><%= portfolioData.title %></p>
             </div>
         </div>
-    </div>
+  </div>
 
     <%- include("../Partials/portfolio_projects") %>
