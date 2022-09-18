@@ -14,19 +14,6 @@ const methodOverride = require("method-override");
 const ExpressError = require('./Utils/ExpressError')
 const portfolioData = require("./Public/Data/portfolioData.json")
 
-//Connect to database
-mongoose.connect("mongodb://localhost:27017/YelpCamp", {
-    useNewURLParser: true,
-    //createUserIndex: true,        // Not supported in mongoose?
-    useUnifiedTopology: true,
-});
-
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error"));
-db.once("open", () => {
-    console.log("Database connected");
-});
-
 // Initialize application
 const app = express();
 

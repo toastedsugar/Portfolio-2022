@@ -1,12 +1,46 @@
 <% layout("Layouts/boilerplate") %> 
 <main class="col-xl-8 py-3 px-5 mt-5 text-light">
 
-    <!-- Display general information projects here-->
+    <!-- Display general information here-->
     <section>
         <h2 class="pb-3">About Me</h2>
         <p class="mb-3 px-4"><%= portfolioData.bio %></p>
     </section>
 
+
+    <!-- Display skills here-->
+    <section class="py-3">
+        <h2>Skills</h2>
+        <div class="mb-3 px-4">
+            <ul class="list-unstyled">
+                <% for (let skill_type of portfolioData.skills){ %>
+                <% for (let key of Object.keys(skill_type)){ %>
+                    <li class="text-light pb-2"><% for (let skill of skill_type[key]){ %> <span class="badge rounded-pill text-bg-light text-dark px-2"><%= skill %></span><% } %></li>
+                <% } %> 
+                <% } %> 
+            </ul>
+        </div>
+    </section>
+
+    <!-- Display professional experience here-->
+    <section class="py-3">
+        <h2>Professional Experience</h2>
+        <% for (let job of portfolioData.professional_experience){ %>
+            <div class="mb-3 px-4">
+                    <h5 class=""><%= job.title %> </h5>
+                    <p class="">
+                        <div><%= job.company %>, <%= job.location %></div>
+                        <div><%= job.start_date %> - <%= job.end_date %></div>
+                    </p>
+                <ul class="">
+                    <% for (let detail of job.details){ %>
+                        <li class="list-group-item border-secondary bg-primary text-light"> &bull; <%= detail %> </li>
+                    <% } %>
+                </ul>
+            </div>
+        <% } %> 
+    </section>
+    
     <!-- Display education here-->
     <section class="py-3">
         <h2 class="pb-3">Education</h2>
@@ -19,40 +53,9 @@
         <% } %> 
     </section>
 
-    <!-- Display professional experience here-->
-    <section class="py-3">
-        <h2>Professional Experience</h2>
-        <% for (let job of portfolioData.professional_experience){ %>
-            <div class="mb-3 px-4">
-                    <h5 class=""><%= job.title %> </h5>
-                    <p class="">
-                      <div><%= job.company %>, <%= job.location %></div>
-                      <div><%= job.start_date %> - <%= job.end_date %></div>
-                    </p>
-                <ul class="">
-                    <% for (let detail of job.details){ %>
-                        <li class="list-group-item border-secondary bg-primary text-light"> &bull; <%= detail %> </li>
-                    <% } %>
-                </ul>
-            </div>
-        <% } %> 
-    </section>
 
-    <!-- Display skills here-->
-    <section class="py-3">
-        <h2>Skills</h2>
-        <div class="mb-3 px-4">
-            <ul class="list-unstyled">
-                <% for (let skill_type of portfolioData.skills){ %>
-                <% for (let key of Object.keys(skill_type)){ %>
-                    <li class="text-light py-1"><% for (let skill of skill_type[key]){ %> <span class="badge rounded-pill text-bg-light text-dark px-2"><%= skill %></span><% } %></li>
-                <% } %> 
-                <% } %> 
-            </ul>
-        </div>
-    </section>
 
-    <!-- Display skills here-->
+    <!-- Download Button -->
     <section class="py-3">
         <a href="/resume/download">
             <button class="btn btn-light btn-lg">

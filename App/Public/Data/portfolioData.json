@@ -3,7 +3,7 @@
     "title": "Full Stack Web Developer",
     "splash_image": "oliver-plattner-Plt0vHDRb9U-unsplash.png", 
     "description": "Full stack developer specializing in Node, MongoDB and Express looking for a new software development opportunity. Currently employed as an IT professional with three years of experience in a corporate environment. Additional programming experience is with C/C++, Python and JavaScript. ",
-    "bio": "Hello. I am an Information Technology professional that has spent the past six months studying web development. During my three years in industry, I have come to the realization that I am not satisfied with the way my career has been progressing and have been looking to make a change towards something I can do for the forseeable future. I have been programming in some capacity for my entire adult life, first starting with C++ and python many years ago in my community college days and focusing on the web development side more recently. Much of my programming knowledge has been self taught, so I believe I have the capacity required to learn any new skills I may need and provide value to your organization",
+    "bio": "Hello. I am an Information Technology professional that has spent the past six months studying web development in an effort to transition to a role with more creative agency. I have been programming in some capacity for my entire adult life, first starting with C++ and python many years ago when I attended community college, and focusing on web development more recently. I have demonstrated a proficiency with multiple languages in multiple areas of software development, so I am confident I have the capacity to adapt to any requisite employment opportunity.",
     "address": "San Jose, California",
     "phone_number": "",
     "email": "rohan.shrotri@outlook.com",
@@ -77,15 +77,13 @@
                 "JavaScript"
             ],
             "programming_technologies": [
+                "AWS",
                 "Node.js",
                 "Git",
                 "Bootstrap",
                 "Bulma",
                 "Express",
-                "MERN",
-                "MEAN",
-                "Mongo DB",
-                "Mongoose"
+                "Mongo DB"
             ],
             "certificates": [
                 "CompTIA Network+ (in progress)",
