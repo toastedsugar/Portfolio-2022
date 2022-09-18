@@ -11,6 +11,7 @@ const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
 
+const ExpressError = require('./Utils/ExpressError')
 const portfolioData = require("./Public/Data/portfolioData.json")
 
 //Connect to database
@@ -47,6 +48,12 @@ GET Request for Resume */
 app.get("/resume", (req, res) => {
     res.render("Portfolio/resume", {portfolioData});
 })
+
+/***************************************************
+GET Request for Resume Download */
+app.get("/resume/download", (req, res) => {
+    res.download("./Public/Software_Resume_Shrotri.pdf", "Software_Resume_Shrotri.pdf");
+})
   
 /***************************************************
 GET Request for Projects 
@@ -70,6 +77,22 @@ app.get("/project/:id", (req, res) => {
 GET Request for About */
 app.get("/about", (req, res) => {
     res.render("Portfolio/about", {portfolioData});
+})
+
+/***************************************************
+General Purpose error handler */
+app.all("*", (req, res, next) => {
+    //res.send("404");
+    next(new ExpressError("Page not found", 404));
+})
+
+/***************************************************
+    Route not found (middleware)    
+*/
+app.use((err, req, res, next) => {
+    const { statusCode = 500, message } = err;
+    if (!err.message) err.message = "Oh, no!";
+    res.status(statusCode).render("Portfolio/error", { err });
 })
 
 /***************************************************

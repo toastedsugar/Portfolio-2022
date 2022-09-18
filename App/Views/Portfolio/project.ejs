@@ -1,14 +1,17 @@
 <% layout("Layouts/boilerplate") %>
 
-<main class="py-3 container bg-dark text-light">
-    <h2> <%= projectData.title %> </h2>
+<main class="col-xl-8 py-3 px-5 mt-5 text-light">
+    <h1 class="pb-3"> <%= projectData.title %> </h1>
 
     <% for(let skill of projectData.skills_used){ %>
         <span class="badge rounded-pill text-bg-light text-dark"><%= skill %></span>
     <% } %>
 
     <div class="my-3">
-        <a href="<%= projectData.repository %> "><button type="button" class="btn btn-light">Source Code</button></a>
+        <a class="nav-link active" href="<%= projectData.repository %>">
+            <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+            <span class="h4 px-2">Source Code</span>
+        </a>
     </div>
 
     <div class="row">
